@@ -4,19 +4,19 @@ import com.wesleyreisz.rockpaperscissors.GameUtils;
 import com.wesleyreisz.rockpaperscissors.R;
 
 /**
- * Created by wesleyreisz on 9/13/15.
+ * Created by Frosty on 9/27/2015.
  */
-public class Scissors implements GameType {
+public class Spock implements GameType {
 
     @Override
     public String eval(Integer opponentChoice) {
         switch (opponentChoice){
-            case R.id.btnPaper:
-            case R.id.btnLizard:
+            case R.id.btnRock:
+            case R.id.btnScissors:
                 return GameUtils.BEATS;
 
-            case R.id.btnSpock:
-            case R.id.btnRock:
+            case R.id.btnPaper:
+            case R.id.btnLizard:
                 return GameUtils.LOSES_TO;
             default:
                 return GameUtils.TIES;

@@ -1,6 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
@@ -10,29 +12,42 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnPaper"
         android:backgroundTint="@android:color/transparent"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/paper"
-        />
+        android:src="@mipmap/paper"
+        android:layout_below="@+id/btnRock"
+        android:layout_alignStart="@+id/btnScissors" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnRock"
         android:backgroundTint="@android:color/transparent"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/rock"
-        android:layout_above="@id/btnPaper"
-        />
+        android:src="@mipmap/rock"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnPaper" />
 
     <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:id="@+id/btnScissors"
         android:backgroundTint="@android:color/transparent"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/scissors"
-        android:layout_below="@id/btnPaper"
-        />
+        android:src="@mipmap/scissors"
+        android:layout_below="@id/btnPaper" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLizard"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@mipmap/lizard"
+        android:layout_below="@+id/btnScissors"
+        android:layout_alignStart="@+id/btnScissors" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpock"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@mipmap/spock"
+        android:layout_below="@+id/btnLizard"
+        android:layout_alignStart="@+id/btnLizard" />
 
 </RelativeLayout>

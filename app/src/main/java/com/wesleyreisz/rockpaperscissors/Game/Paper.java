@@ -10,13 +10,18 @@ public class Paper implements GameType {
 
     @Override
     public String eval(Integer opponentChoice) {
-        if (opponentChoice== R.id.btnRock){
-            return GameUtils.BEATS;
-        }else if (opponentChoice==R.id.btnScissors){
-            return GameUtils.LOSES_TO;
-        }
-        else{
-            return GameUtils.TIES;
+        switch (opponentChoice){
+            case R.id.btnSpock:
+            case R.id.btnRock:
+                return GameUtils.BEATS;
+
+            case R.id.btnScissors:
+            case R.id.btnLizard:
+                return GameUtils.LOSES_TO;
+            default:
+                return GameUtils.TIES;
+
         }
     }
 }
+
