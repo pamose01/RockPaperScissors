@@ -18,9 +18,8 @@ public class Scissors implements GameType {
             case R.id.btnSpock:
             case R.id.btnRock:
                 return GameUtils.LOSES_TO;
-            default:
-                return GameUtils.TIES;
 
         }
+        return GameUtils.TIES;
     }
 }

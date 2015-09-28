@@ -18,10 +18,9 @@ public class Lizard implements GameType {
             case R.id.btnRock:
             case R.id.btnScissors:
                 return GameUtils.LOSES_TO;
-            default:
-                return GameUtils.TIES;
-            
+
         }
+        return GameUtils.TIES;
     }
 }
 

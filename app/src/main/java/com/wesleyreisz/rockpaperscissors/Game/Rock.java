@@ -18,9 +18,8 @@ public class Rock implements GameType {
             case R.id.btnPaper:
             case R.id.btnSpock:
                 return GameUtils.LOSES_TO;
-            default:
-                return GameUtils.TIES;
 
         }
+        return GameUtils.TIES;
     }
 }

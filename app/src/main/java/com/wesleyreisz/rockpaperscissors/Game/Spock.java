@@ -18,9 +18,8 @@ public class Spock implements GameType {
             case R.id.btnPaper:
             case R.id.btnLizard:
                 return GameUtils.LOSES_TO;
-            default:
-                return GameUtils.TIES;
 
         }
+        return GameUtils.TIES;
     }
 }
