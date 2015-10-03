@@ -12,12 +12,14 @@ public class Rock implements GameType {
     public String eval(Integer opponentChoice) {
         switch (opponentChoice){
             case R.id.btnLizard:
+                return GameUtils.CRUSHES;
             case R.id.btnScissors:
-                return GameUtils.BEATS;
+                return GameUtils.CRUSHES;
 
             case R.id.btnPaper:
+                return GameUtils.COVERED_BY;
             case R.id.btnSpock:
-                return GameUtils.LOSES_TO;
+                return GameUtils.VAPORIZED_BY;
 
         }
         return GameUtils.TIES;

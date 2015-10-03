@@ -12,12 +12,14 @@ public class Scissors implements GameType {
     public String eval(Integer opponentChoice) {
         switch (opponentChoice){
             case R.id.btnPaper:
+                return GameUtils.CUTS;
             case R.id.btnLizard:
-                return GameUtils.BEATS;
+                return GameUtils.DECAPITATES;
 
             case R.id.btnSpock:
+                return GameUtils.SMASHED_BY;
             case R.id.btnRock:
-                return GameUtils.LOSES_TO;
+                return GameUtils.CRUSHED_BY;
 
         }
         return GameUtils.TIES;

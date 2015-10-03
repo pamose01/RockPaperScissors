@@ -16,9 +16,30 @@ import java.util.Random;
  * Created by wesleyreisz on 9/13/15.
  */
 public class GameUtils {
-    public static final String BEATS = "beats";
+    /*public static final String BEATS = "beats";
     public static final String LOSES_TO = "loses to";
+    public static final String TIES = "ties";*/
+    public static final String CUTS = "cuts";
+    public static final String CUT_BY = "is cut by";
+    public static final String DECAPITATES = "decapitates";
+    public static final String DECAPITATED_BY = "is decapitated by";
+    public static final String CRUSHES = "crushes";
+    public static final String CRUSHED_BY = "is crushed by";
+    public static final String EATS = "eats";
+    public static final String EATEN_BY = "is eaten by";
+    public static final String POISONS = "poisons";
+    public static final String POISONED_BY = "is poisoned by";
+    public static final String VAPORIZES = "vaporizes";
+    public static final String VAPORIZED_BY = "is vaporized by";
+    public static final String SMASHES = "smashes";
+    public static final String SMASHED_BY = "is smashed by";
+    public static final String DISPROVES = "disproves";
+    public static final String DISPROVED_BY = "is disproved by";
+    public static final String COVERS = "covers";
+    public static final String COVERED_BY = "is covered by";
     public static final String TIES = "ties";
+
+
 
     public static Integer getComputerChoice(){
         Integer selectedValue;
@@ -70,13 +91,48 @@ public class GameUtils {
     }
 
     public static int defineTextColor(String msg) {
-        if(GameUtils.LOSES_TO.equalsIgnoreCase(msg)){
+        if (GameUtils.EATEN_BY.equalsIgnoreCase(msg)) {
             return Color.RED;
-        }else if(GameUtils.BEATS.equalsIgnoreCase(msg)){
+        } else if (GameUtils.VAPORIZED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.DISPROVED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.CRUSHED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.CUT_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.POISONED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.SMASHED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.COVERED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+        } else if (GameUtils.DECAPITATED_BY.equalsIgnoreCase(msg)) {
+            return Color.RED;
+
+        } else if (GameUtils.EATS.equalsIgnoreCase(msg)) {
             return Color.GREEN;
-        }else{
+        } else if (GameUtils.VAPORIZES.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.DISPROVES.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.CRUSHES.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.CUTS.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.POISONS.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.SMASHES.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.COVERS.equalsIgnoreCase(msg)) {
+            return Color.GREEN;
+        } else if (GameUtils.DECAPITATES.equalsIgnoreCase(msg)) {
+            return Color.RED;
+
+
+        }else {
             return Color.BLACK;
         }
+
     }
 }
-

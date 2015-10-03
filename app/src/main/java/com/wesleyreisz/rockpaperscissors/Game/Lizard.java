@@ -12,12 +12,14 @@ public class Lizard implements GameType {
     public String eval(Integer opponentChoice) {
         switch (opponentChoice){
             case R.id.btnSpock:
+                return GameUtils.POISONS;
             case R.id.btnPaper:
-                  return GameUtils.BEATS;
+                  return GameUtils.EATS;
 
             case R.id.btnRock:
+                return GameUtils.CRUSHED_BY;
             case R.id.btnScissors:
-                return GameUtils.LOSES_TO;
+                return GameUtils.DECAPITATED_BY;
 
         }
         return GameUtils.TIES;

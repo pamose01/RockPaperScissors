@@ -12,12 +12,14 @@ public class Paper implements GameType {
     public String eval(Integer opponentChoice) {
         switch (opponentChoice){
             case R.id.btnSpock:
+                return GameUtils.DISPROVES;
             case R.id.btnRock:
-                return GameUtils.BEATS;
+                return GameUtils.COVERS;
 
             case R.id.btnScissors:
+                return GameUtils.CUT_BY;
             case R.id.btnLizard:
-                return GameUtils.LOSES_TO;
+                return GameUtils.EATEN_BY;
 
         }
         return GameUtils.TIES;
